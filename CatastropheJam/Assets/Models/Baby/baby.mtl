@@ -1,0 +1,29 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 04.04.2014 20:51:55
+
+newmtl _babyyoung_caucasian_female_sweat
+	Ns 30.0000
+	Ni 1.5000
+	d 0.0000
+	Tr 1.0000
+	Tf 0.0000 0.0000 0.0000 
+	illum 2
+	Ka 0.5500 0.5500 0.5500
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.2039 0.1843 0.1843
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ceyhun\Desktop\@turbosquid\anatomy\baby\young_lightskinned_female_diffuse.png
+	map_Kd C:\Users\ceyhun\Desktop\@turbosquid\anatomy\baby\young_lightskinned_female_diffuse.png
+	map_d C:\Users\ceyhun\Desktop\@turbosquid\anatomy\baby\young_lightskinned_female_diffuse.png
+
+newmtl _babyEyeblue
+	Ns 30.0000
+	Ni 1.5000
+	d 0.0000
+	Tr 1.0000
+	Tf 0.0000 0.0000 0.0000 
+	illum 2
+	Ka 0.5500 0.5500 0.5500
+	Kd 1.0000 1.0000 1.0000
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000

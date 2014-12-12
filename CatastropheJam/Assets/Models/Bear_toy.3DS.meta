@@ -1,0 +1,91 @@
+fileFormatVersion: 2
+guid: 25a18b343f1fd4bcf8947a1a92fe1099
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bear
+    100002: bear_body
+    100004: bear_eyes
+    100006: bear_nose
+    100008: //RootNode
+    100010: Camera01
+    100012: Camera01.T.target
+    100014: ground
+    400000: bear
+    400002: bear_body
+    400004: bear_eyes
+    400006: bear_nose
+    400008: //RootNode
+    400010: Camera01
+    400012: Camera01.T.target
+    400014: ground
+    2300000: bear_body
+    2300002: bear_eyes
+    2300004: bear_nose
+    2300006: ground
+    3300000: bear_body
+    3300002: bear_eyes
+    3300004: bear_nose
+    3300006: ground
+    4300000: bear_eyes
+    4300002: bear_body
+    4300004: bear_nose
+    4300006: ground
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    pivotNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
