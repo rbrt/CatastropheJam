@@ -3,9 +3,9 @@ using System.Collections;
 
 public class CharacterController : MonoBehaviour {
 
-	float rotationSpeed = .5f,
-		  forwardSpeed = .1f,
-		  sideSpeed = .1f;
+	float rotationSpeed = 1f,
+		  forwardSpeed = .05f,
+		  sideSpeed = .05f;
 
 	bool movingForward = false,
 		 movingBackward = false,
