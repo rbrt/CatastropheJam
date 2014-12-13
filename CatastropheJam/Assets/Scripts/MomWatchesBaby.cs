@@ -5,8 +5,12 @@ public class MomWatchesBaby : MonoBehaviour {
 
 	[SerializeField] protected Transform playerTransform;
 
-	void Start () {
+	[SerializeField] protected AudioSource source1,
+										   source2;
 
+	public void PlayClips(){
+		source1.Play();
+		source2.Play();
 	}
 
 	// Update is called once per frame
