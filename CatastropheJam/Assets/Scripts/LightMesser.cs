@@ -12,8 +12,8 @@ public class LightMesser : MonoBehaviour {
 	}
 
 	IEnumerator LightLol(){
-		float lightMin = .15f,
-			  lightMax = .5f,
+		float lightMin = 0f,
+			  lightMax = .9f,
 			  lightCurrent = light.color.r;
 
 		bool increment = true;
@@ -21,10 +21,10 @@ public class LightMesser : MonoBehaviour {
 		while (true){
 			Color col = light.color;
 			if (increment){
-				lightCurrent+=.08f;
+				lightCurrent+=.05f;
 			}
 			else{
-				lightCurrent-=.08f;
+				lightCurrent-=.05f;
 			}
 
 			if (lightCurrent > lightMax || lightCurrent < lightMin){

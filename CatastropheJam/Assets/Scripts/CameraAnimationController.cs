@@ -11,10 +11,14 @@ public class CameraAnimationController : MonoBehaviour {
 
 	protected bool animating;
 
+	float idleTime = 5,
+		  lastIdle;
+
 	void Awake(){
 		originalPosition = transform.localPosition;
 		originalRotation = transform.localRotation;
-		animating = true;
+		animating = false;
+		lastIdle = Time.time;
 	}
 
 	public IEnumerator ToggleAnimation(bool toggle){
@@ -35,7 +39,7 @@ public class CameraAnimationController : MonoBehaviour {
 
 	void Update(){
 		if (animating){
-			transform.LookAt(playerTransform, Vector3.up);
+			//transform.LookAt(playerTransform, Vector3.up);
 		}
 	}
 

@@ -5,7 +5,9 @@ public class CharacterController : MonoBehaviour {
 
 	float rotationSpeed = 1f,
 		  forwardSpeed = .05f,
-		  sideSpeed = .05f;
+		  sideSpeed = .05f,
+		  minVertAngle = 0.5f,
+		  maxVertAngle = 25;
 
 	bool movingForward = false,
 		 movingBackward = false,
@@ -25,71 +27,75 @@ public class CharacterController : MonoBehaviour {
 	void Update () {
 
 		if (canMove){
-			Vector3 position = transform.localPosition;
+			Vector3 position = transform.position;
 
 			// Left
 			if (Input.GetKeyDown(KeyCode.A)){
 				movingLeft = true;
 				movingRight = false;
-				babyAnimator.SetBool("walking", true);
+
 			}
 			// Up
 			else if (Input.GetKeyDown(KeyCode.W)){
 				movingBackward = false;
 				movingForward = true;
-				babyAnimator.SetBool("walking", true);
 			}
 			// Down
 			else if (Input.GetKeyDown(KeyCode.S)){
 				movingBackward = true;
 				movingForward = false;
-				babyAnimator.SetBool("walking", true);
 			}
 			//Right
 			else if (Input.GetKeyDown(KeyCode.D)){
 				movingLeft = false;
 				movingRight = true;
-				babyAnimator.SetBool("walking", true);
 			}
 
 			// Left
 			if (Input.GetKeyUp(KeyCode.A)){
 				movingLeft = false;
-				babyAnimator.SetBool("walking", false);
 			}
 			// Up
 			else if (Input.GetKeyUp(KeyCode.W)){
 				movingForward = false;
-				babyAnimator.SetBool("walking", false);
 			}
 			// Down
 			else if (Input.GetKeyUp(KeyCode.S)){
 				movingBackward = false;
-				babyAnimator.SetBool("walking", false);
 			}
 			//Right
 			else if (Input.GetKeyUp(KeyCode.D)){
 				movingRight = false;
-				babyAnimator.SetBool("walking", false);
+
 			}
 
 			if (movingForward){
-				position.z += sideSpeed;
+				position += transform.forward * forwardSpeed;
 			}
 			else if (movingBackward){
-				position.z -= sideSpeed;
+				position -= transform.forward * forwardSpeed;
 			}
-			else if (movingRight){
-				position.x += forwardSpeed;
+
+			if (movingRight){
+				position += transform.right * sideSpeed;
 			}
 			else if (movingLeft){
-				position.x -= forwardSpeed;
+				position -= transform.right * sideSpeed;
+			}
+
+			if (movingForward || movingBackward || movingLeft || movingRight){
+				babyAnimator.SetBool("walking", true);
+			}
+			else{
+				babyAnimator.SetBool("walking", false);
 			}
 
 			float rotation = Input.GetAxis("Mouse X") * rotationSpeed;
+
 			transform.Rotate(0, rotation, 0);
 
-			transform.localPosition = position;
+
+			transform.position = position;
 		}
 	}
 }
